@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "titulo": "Ecos del Amanecer",
-    "generos": ["Drama", "Ciencia Ficción"],
-    "imagen": "img/ecos_amanecer.jpg",
-    "sinopsis": "En un futuro cercano, la humanidad descubre una forma de comunicarse con versiones pasadas de sí misma. Una científica deberá decidir si usar la tecnología para salvar a su hija o evitar un colapso temporal que destruiría el mundo. Su dilema cambiará el curso del tiempo para siempre.",
-    "trailer": "https://www.youtube.com/embed/abc123",
-    "estreno": "2025-10-12",
+    "titulo": "Harry Potter",
+    "generos": ["Fantasía", "Aventura"],
+    "imagen": "../img/harry_potter.jpg",
+    "sinopsis": "En un mundo donde la magia convive en secreto con lo cotidiano, un joven descubre su origen y su destino al ingresar a una escuela de hechicería. A través de amistades sinceras, pruebas peligrosas y secretos familiares, deberá enfrentarse a fuerzas que amenazan tanto su vida como el equilibrio del mundo mágico. El viaje de crecimiento, coraje y lealtad transformará su percepción del bien y el mal.",
+    "trailer": "https://www.youtube.com/embed/VyHV0BRtdxo",
+    "estreno": "2025-10-10",
     "precios": {
       "estreno": 6.50,
       "normal": 3.50
@@ -14,54 +14,54 @@
   },
   {
     "id": 2,
-    "titulo": "Sombras de Acero",
-    "generos": ["Acción", "Suspenso"],
-    "imagen": "img/sombras_acero.jpg",
-    "sinopsis": "Un exsoldado cibernético es perseguido por el mismo gobierno que lo creó. Mientras lucha por su libertad, descubre que su implante cerebral guarda los secretos de una conspiración que podría acabar con la humanidad.",
-    "trailer": "https://www.youtube.com/embed/def456",
-    "estreno": "2025-09-28",
+    "titulo": "Perfect Blue",
+    "generos": ["Thriller", "Psicológico"],
+    "imagen": "../img/perfect_blue.jpg",
+    "sinopsis": "Una actriz decide dejar atrás su antigua vida para reinventarse, pero la fama y las expectativas generan una presión que disuelve la frontera entre su identidad pública y su intimidad. Atrapada en una espiral de recuerdos, persecuciones y confusiones, se ve forzada a confrontar verdades dolorosas mientras intenta recuperar el control sobre su propia mente. El relato explora la fragilidad del yo y las consecuencias de la obsesión mediática.",
+    "trailer": "https://www.youtube.com/embed/ahS2Py7IB4s",
+    "estreno": "2025-09-20",
     "precios": {
-      "estreno": 6.00,
+      "estreno": 5.80,
       "normal": 3.00
     }
   },
   {
     "id": 3,
-    "titulo": "Bajo la Lluvia Carmesí",
-    "generos": ["Romance", "Drama"],
-    "imagen": "img/lluvia_carmesi.jpg",
-    "sinopsis": "Dos desconocidos se conocen durante una tormenta en una ciudad futurista. Sus encuentros se vuelven una constante, pero la realidad se distorsiona cuando descubren que viven en líneas temporales distintas.",
-    "trailer": "https://www.youtube.com/embed/ghi789",
-    "estreno": "2025-09-15",
+    "titulo": "Star Wars III",
+    "generos": ["Ciencia Ficción", "Acción"],
+    "imagen": "../img/star_wars_iii.jpg",
+    "sinopsis": "En medio de conflictos galácticos y decisiones que cambian el curso de la historia, héroes y villanos se enfrentan por el control del destino de la galaxia. Traiciones, batallas espaciales y dilemas morales llevan a los personajes a límites extremos. La película combina espectaculares secuencias de acción con momentos íntimos que muestran cómo el poder y el sacrificio moldean el futuro de civilizaciones enteras, mientras los lazos personales se tensan hasta romperse.",
+    "trailer": "https://www.youtube.com/embed/5UnjrG_N8hU",
+    "estreno": "2025-10-14",
     "precios": {
-      "estreno": 5.50,
-      "normal": 3.00
+      "estreno": 7.00,
+      "normal": 4.00
     }
   },
   {
     "id": 4,
-    "titulo": "La Última Nebulosa",
-    "generos": ["Aventura", "Fantasía"],
-    "imagen": "img/ultima_nebulosa.jpg",
-    "sinopsis": "Un joven explorador se lanza a las profundidades del cosmos para encontrar una mítica nebulosa capaz de conceder deseos. En el camino, aprenderá que los deseos más poderosos son los que nacen del sacrificio.",
-    "trailer": "https://www.youtube.com/embed/jkl012",
-    "estreno": "2025-08-20",
+    "titulo": "Kung Fu Panda 2",
+    "generos": ["Animación", "Comedia", "Aventura"],
+    "imagen": "../img/kung_fu_panda_2.jpg",
+    "sinopsis": "Un guerrero inesperado, armado de buen humor y un corazón enorme, debe enfrentar a un enemigo que amenaza la paz de su valle. A lo largo de la aventura descubrirá secretos de su pasado y aprenderá nuevas enseñanzas de maestros ancestrales. Con escenas llenas de acción, comedia y emociones, la historia celebra la amistad, la superación personal y el poder de creer en uno mismo incluso frente a desafíos que parecen imposibles de vencer.",
+    "trailer": "https://www.youtube.com/embed/FinvUDT6ziA",
+    "estreno": "2025-08-01",
     "precios": {
-      "estreno": 6.00,
+      "estreno": 5.50,
       "normal": 2.80
     }
   },
   {
     "id": 5,
-    "titulo": "Circuito Infinito",
-    "generos": ["Thriller", "Tecnología"],
-    "imagen": "img/circuito_infinito.jpg",
-    "sinopsis": "Un hacker descubre un programa que puede reiniciar la conciencia humana dentro de simulaciones. Pero cuando lo activa, se da cuenta de que él mismo ya estaba dentro de una. Para salir, deberá destruir el sistema que lo creó.",
-    "trailer": "https://www.youtube.com/embed/mno345",
-    "estreno": "2025-07-10",
+    "titulo": "Super Mario Bros La Película",
+    "generos": ["Fantasía", "Familia", "Aventura"],
+    "imagen": "../img/super_mario_bros.jpg",
+    "sinopsis": "Dos hermanos fontaneros son arrastrados a un mundo fantástico donde criaturas extrañas, castillos y pruebas imposibles marcan su camino. En su intento por rescatar a un reino en apuros, aprenderán sobre trabajo en equipo, ingenio y valentía. Entre desafíos coloridos y secuencias llenas de humor, la película ofrece una aventura familiar que mezcla nostalgia con ritmo moderno, destinada a entretener tanto a generaciones que crecieron con los personajes como a nuevas audiencias.",
+    "trailer": "https://www.youtube.com/embed/TnGl01FkMMo",
+    "estreno": "2025-10-01",
     "precios": {
-      "estreno": 5.00,
-      "normal": 2.50
+      "estreno": 6.00,
+      "normal": 3.20
     }
   }
 ]

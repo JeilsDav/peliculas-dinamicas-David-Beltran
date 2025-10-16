@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rentar Películas – CinePlus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">CinePlus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./renta.html">Renta</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="bg-primary text-white text-center p-4">
+    <h1>Renta de Películas</h1>
+    <p class="lead">Selecciona tu película, método de pago y días de renta</p>
+  </header>
+
+  <!-- FORMULARIO -->
+  <main class="container my-4">
+    <form id="formRenta" class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre y Apellido</label>
+        <input type="text" id="nombre" class="form-control" required />
+        <div class="invalid-feedback">Ingresa tu nombre.</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" id="email" class="form-control" required />
+        <div class="invalid-feedback">Ingresa un correo válido.</div>
+      </div>
+
+      <div class="col-md-8">
+        <label for="pelicula" class="form-label">Película</label>
+        <select id="pelicula" class="form-select" required>
+          <option value="">Seleccione una película...</option>
+          <!-- Se llena por AJAX -->
+        </select>
+        <div class="form-text" id="ayudaPrecio">Precio unitario: —</div>
+        <div class="invalid-feedback">Selecciona una película.</div>
+      </div>
+
+      <div class="col-md-4">
+        <label for="dias" class="form-label">Días de renta</label>
+        <input type="number" id="dias" class="form-control" min="1" max="7" value="1" required />
+        <div class="invalid-feedback">Elige entre 1 y 7 días.</div>
+      </div>
+
+      <div class="col-12">
+        <label class="form-label d-block mb-2">Método de pago</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="pago" id="pagoTarjeta" value="Tarjeta" required>
+          <label class="form-check-label" for="pagoTarjeta">Tarjeta</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="pago" id="pagoEfectivo" value="Efectivo" required>
+          <label class="form-check-label" for="pagoEfectivo">Efectivo</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="pago" id="pagoPaypal" value="PayPal" required>
+          <label class="form-check-label" for="pagoPaypal">PayPal</label>
+        </div>
+        <div class="invalid-feedback d-block">Selecciona un método de pago.</div>
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="terminos" required>
+          <label class="form-check-label" for="terminos">
+            Acepto los términos y condiciones de la renta.
+          </label>
+          <div class="invalid-feedback">Debes aceptar los términos para continuar.</div>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex align-items-center justify-content-between">
+        <h5 class="m-0">Total: <span id="total">$0.00</span></h5>
+        <button type="submit" class="btn btn-primary">Confirmar renta</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- MODAL RESUMEN -->
+  <div class="modal fade" id="resumenModal" tabindex="-1" aria-labelledby="resumenLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resumenLabel">Resumen de la Renta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Cliente:</strong> <span id="rCliente"></span></li>
+            <li class="list-group-item"><strong>Correo:</strong> <span id="rCorreo"></span></li>
+            <li class="list-group-item"><strong>Película:</strong> <span id="rPelicula"></span></li>
+            <li class="list-group-item"><strong>Precio unitario:</strong> <span id="rUnitario"></span></li>
+            <li class="list-group-item"><strong>Días:</strong> <span id="rDias"></span></li>
+            <li class="list-group-item"><strong>Método de pago:</strong> <span id="rPago"></span></li>
+            <li class="list-group-item"><strong>Total a pagar:</strong> <span id="rTotal"></span></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button class="btn btn-success" id="btnConfirmado" data-bs-dismiss="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIBRERÍAS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/renta.js"></script>
+</body>
+</html>
