@@ -1,26 +1,67 @@
 [
   {
     "id": 1,
-    "titulo": "Dune",
-    "imagen": "dune.jpg",
-    "genero": "Aventura",
-    "sinopsis": "Un joven emprende una misión para salvar su mundo.",
-    "trailer": "https://www.youtube.com/embed/mSY_NbSmaUI"
+    "titulo": "Ecos del Amanecer",
+    "generos": ["Drama", "Ciencia Ficción"],
+    "imagen": "img/ecos_amanecer.jpg",
+    "sinopsis": "En un futuro cercano, la humanidad descubre una forma de comunicarse con versiones pasadas de sí misma. Una científica deberá decidir si usar la tecnología para salvar a su hija o evitar un colapso temporal que destruiría el mundo. Su dilema cambiará el curso del tiempo para siempre.",
+    "trailer": "https://www.youtube.com/embed/abc123",
+    "estreno": "2025-10-12",
+    "precios": {
+      "estreno": 6.50,
+      "normal": 3.50
+    }
   },
   {
     "id": 2,
-    "titulo": "50 primeras citas",
-    "imagen": "50-primeras-citas.jpg",
-    "genero": "Comedia",
-    "sinopsis": "Henry se enamora de Lucy, una mujer con pérdida de memoria a corto plazo.",
-    "trailer": "https://www.youtube.com/embed/17KJk3ErIx0"
+    "titulo": "Sombras de Acero",
+    "generos": ["Acción", "Suspenso"],
+    "imagen": "img/sombras_acero.jpg",
+    "sinopsis": "Un exsoldado cibernético es perseguido por el mismo gobierno que lo creó. Mientras lucha por su libertad, descubre que su implante cerebral guarda los secretos de una conspiración que podría acabar con la humanidad.",
+    "trailer": "https://www.youtube.com/embed/def456",
+    "estreno": "2025-09-28",
+    "precios": {
+      "estreno": 6.00,
+      "normal": 3.00
+    }
   },
   {
     "id": 3,
-    "titulo": "Batman Caballero de la Noche",
-    "imagen": "batman-caballero-de-la-noche.webp",
-    "genero": "Acción",
-    "sinopsis": "La película comienza con el violento robo de uno de los bancos de la mafia por una banda de payasos.",
-    "trailer": "https://www.youtube.com/embed/dzQtWkpc2-c"
+    "titulo": "Bajo la Lluvia Carmesí",
+    "generos": ["Romance", "Drama"],
+    "imagen": "img/lluvia_carmesi.jpg",
+    "sinopsis": "Dos desconocidos se conocen durante una tormenta en una ciudad futurista. Sus encuentros se vuelven una constante, pero la realidad se distorsiona cuando descubren que viven en líneas temporales distintas.",
+    "trailer": "https://www.youtube.com/embed/ghi789",
+    "estreno": "2025-09-15",
+    "precios": {
+      "estreno": 5.50,
+      "normal": 3.00
+    }
+  },
+  {
+    "id": 4,
+    "titulo": "La Última Nebulosa",
+    "generos": ["Aventura", "Fantasía"],
+    "imagen": "img/ultima_nebulosa.jpg",
+    "sinopsis": "Un joven explorador se lanza a las profundidades del cosmos para encontrar una mítica nebulosa capaz de conceder deseos. En el camino, aprenderá que los deseos más poderosos son los que nacen del sacrificio.",
+    "trailer": "https://www.youtube.com/embed/jkl012",
+    "estreno": "2025-08-20",
+    "precios": {
+      "estreno": 6.00,
+      "normal": 2.80
+    }
+  },
+  {
+    "id": 5,
+    "titulo": "Circuito Infinito",
+    "generos": ["Thriller", "Tecnología"],
+    "imagen": "img/circuito_infinito.jpg",
+    "sinopsis": "Un hacker descubre un programa que puede reiniciar la conciencia humana dentro de simulaciones. Pero cuando lo activa, se da cuenta de que él mismo ya estaba dentro de una. Para salir, deberá destruir el sistema que lo creó.",
+    "trailer": "https://www.youtube.com/embed/mno345",
+    "estreno": "2025-07-10",
+    "precios": {
+      "estreno": 5.00,
+      "normal": 2.50
+    }
   }
 ]
