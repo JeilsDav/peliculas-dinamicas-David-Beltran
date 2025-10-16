@@ -1,4 +1,12 @@
+// =============================
+// ALERTA DE BIENVENIDA (solo una vez)
+// =============================
 $(document).ready(function() {
+  if (!localStorage.getItem("bienvenidaMostrada")) {
+    alert("🎬 ¡Bienvenido a CinePlus! Disfruta de los estrenos más recientes 🍿");
+    localStorage.setItem("bienvenidaMostrada", "true");
+  }
+
   // Mostrar spinner de carga
   $("#spinner").show();
 
@@ -19,6 +27,9 @@ $(document).ready(function() {
   }, 5000);
 });
 
+// =============================
+// EVENTOS DEL MODAL DE TRÁILER
+// =============================
 $(document).on("click", ".ver-trailer", function() {
   const url = $(this).data("trailer");
   $("#videoTrailer").attr("src", url);
@@ -28,6 +39,9 @@ $("#trailerModal").on("hidden.bs.modal", function() {
   $("#videoTrailer").attr("src", ""); // Detiene el video al cerrar
 });
 
+// =============================
+// FUNCIÓN PARA MOSTRAR PELÍCULAS
+// =============================
 function mostrarPeliculas(peliculas) {
   const hoy = new Date();
   let html = "";
@@ -58,5 +72,6 @@ function mostrarPeliculas(peliculas) {
     `;
   });
 
-  $("#peliculas").html(html);
+  // Mostrar películas con animación fadeIn
+  $("#peliculas").hide().html(html).fadeIn(1200);
 }
